@@ -1,0 +1,240 @@
+/* styles.css */
+
+/* General Styles - Applies to the entire website */
+body {
+    font-family: 'Arial', sans-serif; /* Sets a clean, readable font */
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Light gray background for better readability */
+    color: #333; /* Dark text color for contrast */
+    }
+
+/* Header Styling */
+header {
+    background: linear-gradient(90deg, #005f73, #0a9396); /* Gradient background for a modern look */
+    color: white;
+    padding: 1.5em 0;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+/* Navigation Bar - Centers links and adds hover effects */
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    background-color: #0a9396; /* Slightly darker background for contrast */
+    margin: 0;
+    padding: 1em 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Smooth transition effect */
+}
+
+nav ul li a:hover {
+    color: #f4a261; /* Changes link color on hover */
+}
+
+/* Main Content - Centers content and controls width for desktop */
+main {
+    padding: 40px;
+    max-width: 800px; /* Optimized for desktop view at 2/3 width */
+    margin: auto;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Section Headings - Enhances visibility */
+h2 {
+    color: #005f73;
+    border-bottom: 3px solid #0a9396;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+/* Paragraph Styling - Improves text readability */
+p {
+    line-height: 1.6;
+    font-size: 1.1em;
+}
+
+/* Profile Image - Styles the profile picture */
+.profile-image {
+    width: 180px;
+    height: auto;
+    border-radius: 50%; /* Makes the image circular */
+    display: block;
+    margin: 20px auto;
+    border: 4px solid #0a9396; /* Adds a border around the image */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Contact Information - Styles links inside the contact section */
+.contact-info {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.contact-info a {
+    color: #0a9396;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: #f4a261;
+}
+
+/* Form Styling - Improves the layout of contact forms */
+form {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+label, input, textarea {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    font-size: 1em;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Button Styling - Adds a hover effect for better interaction */
+button {
+    background: #0a9396;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1em;
+    width: 100%;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #005f73; /* Darker shade when hovered */
+}
+
+/* Responsive Design - Adjusts layout for mobile screens */
+@media (max-width: 768px) {
+    /* Stacks navigation links vertically for smaller screens */
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    
+        /* Mobile view should take most of the screen width */
+        main {
+            max-width: 90%; /* Allows better viewability on smaller screens */
+            padding: 20px;
+        }
+    }
+
+@media (orientation: landscape) {
+    /* Slightly adjust padding when viewed in landscape mode */
+    main {
+        padding: 30px;
+    }
+}
+
+/* Interactive Chart Styling */
+.interactive-chart {
+    display: block;
+    max-width: 80%;  /* Limits the image width to 80% of its container */
+    height: auto;  /* Maintains aspect ratio */
+    margin: 20px auto;  /* Centers the image */
+}
+
+/* Contact Details Styling */
+.contact-item {
+    font-size: 0.85em; /* Makes the text slightly smaller */
+    color: #666; /* Muted color for a softer look */
+    text-align: center; /* Aligns contact info neatly */
+    margin: 5px 0; /* Adds space between items */
+}
+
+.contact-info a {
+    color: #0a9396; /* Custom link color */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: #f4a261; /* Changes color on hover */
+}
+
+
+button:hover {
+    background: #005f73; /* Darker shade when hovered */
+}
+
+/* Responsive Design - Adjusts layout for mobile screens */
+@media (max-width: 768px) {
+    /* Stacks navigation links vertically for smaller screens */
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    
+    /* Mobile view should take most of the screen width */
+    main {
+        max-width: 90%; /* Allows better viewability on smaller screens */
+        padding: 20px;
+    }
+
+@media (orientation: landscape) {
+    /* Slightly adjust padding when viewed in landscape mode */
+    main {
+        padding: 30px;
+    }
+    .interactive-chart {
+        display: block;
+        max-width: 80%;  /* Limits the image width to 80% of its container */
+        height: auto;  /* Maintains aspect ratio */
+        margin: 20px auto;  /* Centers the image */
+    }
+    .contact-item {
+        font-size: 0.85em; /* Makes the text slightly smaller */
+        color: #666; /* Muted color for a softer look */
+        text-align: center; /* Aligns contact info neatly */
+        margin: 5px 0; /* Adds space between items */
+    }
+    .contact-info {
+        font-size: 0.85em; /* Makes the text slightly smaller */
+        color: #666; /* Muted color for a softer look */
+        text-align: center; /* Aligns contact info neatly */
+        margin: 5px 0; /* Adds space between items */
+    }
+    
+    .contact-info a {
+        color: #0a9396; /* Custom link color */
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s ease;
+    }
+    .contact-info a:hover {
+        color: #f4a261; /* Changes color on hover */ 
+    }
