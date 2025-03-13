@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Story</title>
     <link rel="stylesheet" href="styles.css">
-    
 </head>
 <body>
     <header>
@@ -18,6 +17,7 @@
                 <li><a href="about.html">About Me</a></li>
                 <li><a href="story.html">My Story</a></li>
                 <li><a href="contact.html">Contact</a></li>
+
             </ul>
         </nav>
     </header>
@@ -48,13 +48,27 @@
             <!-- Brief mention of global Muslim population growth -->
             <p>Islam continues to be one of the fastest-growing religions worldwide. According to <a href="https://www.pewresearch.org/short-reads/2017/04/06/the-future-of-world-religions/" target="_blank">Pew Research Center</a>, the global Muslim population is expected to grow significantly, reaching nearly 2.3 billion by 2050.</p>
             
-            <!-- Image of the Kaaba with a historical comparison -->
-            <img src="images/Kaaba.jpg" alt="Kaaba in Mecca" class="featured-image" style="display: block; margin: auto; max-width: 100%;">
-            <p style="text-align: center; font-size: 0.9em;">
-                Left: A photograph of the Kaaba (center of photo) in the city of Mecca, circa 1887. Right: A view from a similar location 128 years later shows the Grand Mosque and the Kaaba in Mecca, Saudi Arabia, on September 25, 2015.<br>
-                <small>Al Sayyid Abd al Ghaffar / Library of Congress—Mohammed Al-Shaikh / AFP / Getty</small>
-            </p>
-            
+           <!-- KnightLab of the Kaaba with a historical comparison -->
+           <style>
+            .juxtapose-container {
+                display: flex;
+                justify-content: center; /* Centers the iframe */
+                align-items: center; /* Aligns content vertically */
+                width: 100%; /* Ensures responsiveness */
+                margin: 20px auto; /* Adds spacing */
+            }
+        
+            iframe.juxtapose {
+                width: 100%; /* Adjust width to fit content */
+                max-width: 900px; /* Ensures it doesn't get too wide */
+                height: 600px; /* Adjust height for better fit */
+                border: none;
+            }
+        </style>
+        
+<div class="juxtapose-container">
+    <iframe frameborder="0" class="juxtapose" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=a53b89e8-0042-11f0-9397-d93975fe8866"></iframe>
+</div>
             <p>In Chicago too, the Muslim population remains growing, with 
                 <a href="https://ispu.org/illinois-muslims-report-1/" target="_blank">research</a> 
                 showing a steady increase 
